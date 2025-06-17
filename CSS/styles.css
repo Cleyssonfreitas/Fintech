@@ -1,0 +1,65 @@
+:root {
+  --seren-verde: #5cb85c;  
+  --seren-azul-escuro: #2c3e50; 
+  --seren-fundo-claro: #f8f9fa; 
+  --seren-texto: #34495e; 
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif; 
+  color: var(--seren-texto);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--seren-azul-escuro);
+  font-weight: 600; 
+}
+
+
+.navbar, footer {
+  background-color: var(--seren-azul-escuro) !important; 
+}
+
+.logo-nav {
+  height: 35px;
+  width: auto;
+}
+
+
+.btn-primary {
+  background-color: var(--seren-verde);
+  border-color: var(--seren-verde);
+}
+
+.btn-primary:hover {
+  background-color: #4a9d4a; /* Um tom de verde um pouco mais escuro para o efeito hover */
+  border-color: #4a9d4a;
+}
+
+.btn-success {
+  background-color: var(--seren-verde);
+  border-color: var(--seren-verde);
+}
+
+.btn-success:hover {
+  background-color: #4a9d4a;
+  border-color: #4a9d4a;
+}
+
+/* 5. AJUSTES NAS SEÇÕES
+   - Damos um fundo sutil para a seção de funcionalidades para criar contraste.
+*/
+.section-funcionalidades {
+  background-color: var(--seren-fundo-claro);
+  border-radius: 15px;
+}
+
+/* REGRA CORRIGIDA E MAIS FORTE PARA OS ÍCONES 
+   - Esta regra agora é a única necessária para os ícones.
+   - Ela vai colorir TODOS os ícones dentro da seção de funcionalidades com a cor verde.
+   - O '!important' garante que nossa cor da marca tenha prioridade sobre as cores do Bootstrap (text-primary, text-dark, etc).
+*/
+.section-funcionalidades .bi {
+  color: var(--seren-verde) !important; 
+}

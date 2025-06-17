@@ -1,18 +1,27 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fintech</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Seren - Sua Vida Financeira em Equilíbrio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">SuaFintech</a>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="Images/Logo.png" alt="Logo Seren" class="logo-nav">
+        <span class="ms-2">Seren</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,30 +37,115 @@
             <a class="nav-link" href="#">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary ms-lg-3" href="#">Login</a>
+            <a class="btn btn-outline-light ms-lg-3" href="#">Login</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="container mt-5">
-    <div class="row">
+  <main class="container py-5 my-5">
+    <div class="row align-items-center">
       <div class="col-md-6">
         <h1>Controle suas finanças com facilidade e segurança.</h1>
         <p class="lead">A plataforma completa para você gerenciar suas contas, investimentos e planejar seu futuro financeiro.</p>
         <a href="#" class="btn btn-success btn-lg">Abra sua conta</a>
       </div>
-      <div class="col-md-6">
-        <img src="https://via.placeholder.com/500x300" alt="Demonstração da plataforma" class="img-fluid">
+      <div class="col-md-6 mt-4 mt-md-0 d-flex justify-content-center">
+        <img src="Images/ilustracao-hero.avif" alt="Ilustração de uma pessoa relaxando enquanto gerencia suas finanças no app Seren" class="img-fluid rounded">
       </div>
     </div>
   </main>
+  
+  <section class="container mt-4 py-5 px-4 section-funcionalidades">
+    <div class="row text-center">
+      <div class="col-12">
+        <h2>Funcionalidades para uma vida mais serena</h2>
+        <p class="lead text-muted">Tudo o que você precisa para tomar as melhores decisões financeiras.</p>
+      </div>
+    </div>
 
-  <footer class="container mt-5 text-center">
-    <p>&copy; 2025 SuaFintech. Todos os direitos reservados.</p>
-  </footer>
+    <div class="row mt-4 text-center">
+      <div class="col-md-4">
+        <i class="bi bi-graph-up-arrow h1"></i> <h4 class="mt-3">Controle de Gastos</h4>
+        <p>Veja para onde seu dinheiro está indo com gráficos simples e categorização automática de despesas.</p>
+        <p>
+          <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo1" aria-expanded="false" aria-controls="collapseInfo1">
+            Saiba mais
+          </button>
+        </p>
+        <div class="collapse" id="collapseInfo1">
+          <div class="card card-body">
+            Conecte suas contas e cartões para ter uma visão unificada. Nosso sistema inteligente classifica seus gastos para que você não precise fazer nada.
+          </div>
+        </div>
+      </div>
 
-<script src="js/bootstrap.bundle.min.js"></script>
+      <div class="col-md-4">
+        <i class="bi bi-piggy-bank h1"></i>
+        <h4 class="mt-3">Metas de Poupança</h4>
+        <p>Crie metas personalizadas, como uma viagem ou a compra de um carro, e acompanhe seu progresso.</p>
+        <p>
+          <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo2" aria-expanded="false" aria-controls="collapseInfo2">
+            Saiba mais
+          </button>
+        </p>
+        <div class="collapse" id="collapseInfo2">
+          <div class="card card-body">
+            Defina o valor e o prazo, e o Seren te ajuda a calcular o quanto você precisa guardar por mês. Ative lembretes e comemore cada conquista!
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <i class="bi bi-shield-check h1"></i>
+        <h4 class="mt-3">Segurança Total</h4>
+        <p>Seus dados são protegidos com a mesma criptografia de nível bancário que as maiores instituições usam.</p>
+        <p>
+          <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo3" aria-expanded="false" aria-controls="collapseInfo3">
+            Saiba mais
+          </button>
+        </p>
+        <div class="collapse" id="collapseInfo3">
+          <div class="card card-body">
+            Utilizamos autenticação de dois fatores e monitoramento constante para garantir que suas informações estejam sempre seguras. Sua privacidade é nossa prioridade.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="text-white pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row">
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Seren</h6>
+        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: var(--seren-verde); height: 2px"/>
+        <p>Sua vida financeira em equilíbrio. Alcance a serenidade com o controle total das suas finanças.</p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Links</h6>
+        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: var(--seren-verde); height: 2px"/>
+        <p><a href="#!" class="text-white">Sobre</a></p>
+        <p><a href="#!" class="text-white">Serviços</a></p>
+        <p><a href="#!" class="text-white">Termos de Uso</a></p>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 class="text-uppercase fw-bold">Siga-nos</h6>
+        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: var(--seren-verde); height: 2px"/>
+        <p>
+          <a href="#!" class="text-white me-4"><i class="bi bi-facebook"></i></a>
+          <a href="#!" class="text-white me-4"><i class="bi bi-twitter-x"></i></a>
+          <a href="#!" class="text-white me-4"><i class="bi bi-instagram"></i></a>
+          <a href="#!" class="text-white me-4"><i class="bi bi-linkedin"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2025 Copyright: Seren
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
-</html> 
+</html>
